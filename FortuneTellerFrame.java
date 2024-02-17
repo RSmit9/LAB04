@@ -20,7 +20,7 @@ public FortuneTellerFrame()
 
   super("Fortune Teller");
   setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-  setSize(600, 600);
+  setSize(1000,1000);
   setResizable(false);
   setLocationRelativeTo(null);
 
