@@ -1,4 +1,5 @@
 
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -48,12 +49,12 @@ public FortuneTellerFrame()
 
         fortuneArea = new JTextArea();
         fortuneArea.setEditable(false);
-        fortuneArea.setFont(new Font("Arial", Font.PLAIN, 24));
+        fortuneArea.setFont(new Font("Arial", Font.PLAIN, 36));
 
         JScrollPane scrollPane = new JScrollPane(fortuneArea);
 
         readButton = new JButton("Read My Fortune!");
-        readButton.setFont(new Font("Arial", Font.BOLD, 24));
+        readButton.setFont(new Font("Arial", Font.BOLD, 36));
         readButton.addActionListener((ActionEvent e) ->
         {
             String fortune = getRandomFortune();
@@ -61,7 +62,7 @@ public FortuneTellerFrame()
         });
 
         quitButton = new JButton("Quit");
-        quitButton.setFont(new Font("Arial", Font.BOLD, 24));
+        quitButton.setFont(new Font("Arial", Font.BOLD, 36));
         quitButton.addActionListener((ActionEvent e) ->
         {
             System.exit(0);
